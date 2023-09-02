@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.MuiTableCell-head{
+  font-weight: bolder !important;
+  color:#fff !important;
+  background-color: #4e4e4e !important;
+}
+.loaderStyle{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2); 
+  }
+  
+  .loader,.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active, .css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active .MuiTableSortLabel-icon {
+    color: #fff !important; 
+  }
+.dropEnd{
+  flex:end;
+  align-items: end;
+  margin: 10px;
+}
