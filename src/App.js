@@ -7,13 +7,7 @@ const router = createBrowserRouter([
         path:'/',
         element:<Crypto/>
       },
-      // {
-      //   path:"/menu",
-      //   element:<Menu/>,
-      //   loader: menuLoader,
-      //   errorElement: <Error/>,
 
-      // },
      
  
 ])

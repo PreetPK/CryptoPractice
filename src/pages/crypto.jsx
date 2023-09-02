@@ -15,19 +15,19 @@ const Crypto = () => {
       const params=  {
           vs_currency: data?data:'usd', 
           order: 'market_cap_desc', // Order by market cap in descending order
-          per_page: rowsPerPage, // Display top 10 cryptocurrencies
+          per_page: rowsPerPage, 
           page: page +1,
           sparkline: false,
         }
         try {
             const response = await CryptoApi.getCoinsMarket(params);
-            console.log(response);
+            
             setData(response);
           } catch (error) {
             console.log(error.message);
             setError('An error occurred while fetching data from the API.'); // error message
           }finally {
-            setLoading(false); // Set loading to false when done (in both cases i.e. success or error)
+            setLoading(false); 
           }
         
         }
