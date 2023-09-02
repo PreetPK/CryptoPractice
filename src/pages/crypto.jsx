@@ -39,9 +39,7 @@ const Crypto = () => {
         useEffect(()=>{
         getCryptoData()
         },[])
-const handleRowClick=(data)=>{
-  console.log(data)
-}
+
   return(
     <>
      {loading ? ( 
@@ -70,7 +68,7 @@ const handleRowClick=(data)=>{
         <MenuItem value="jpy">JPY</MenuItem>
       </Select>
     </FormControl>
-        <GeneralTable  data={data} handleRowClick={handleRowClick} getCryptoData={getCryptoData} selectedOption={selectedOption} rowsPerPage={rowsPerPage} setRowsPerPage={setRowsPerPage} setPage={setPage} page={page}/>
+        <GeneralTable  data={data} getCryptoData={getCryptoData} selectedOption={selectedOption} rowsPerPage={rowsPerPage} setRowsPerPage={setRowsPerPage} setPage={setPage} page={page}/>
         </>
       )}
       </>
